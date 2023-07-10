@@ -1,0 +1,44 @@
+<div class="input-group">
+  <table class="table table-borderless">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email Adress</th>
+      <th scope="col">Contact No.</th>
+      <th scope="col" class="actions">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of contactList">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.number}}</td>
+        <td>
+          <button [routerLink]="item.id" class="btn btn-view" style="background-color: rgb(41, 41, 143); border: none;color: white">View</button>
+          <button class="btn btn-edit" style="background-color: rgb(69, 96, 232); border: none; color: white">Edit</button>
+          <button (click)="deleteData(item.id)" class="btn btn-delete" style="background-color: rgb(186, 49, 49); border: none; color: white">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+
+
+    <!-- <tbody>
+      <tr *ngFor="let contactData of mycontact">
+        <td>{{contactData.id}}</td>
+        <td>{{contactData.name}}</td>
+        <td>{{contactData.email}}</td>
+        <td>{{contactData.number}}</td>
+        <td>
+          <button  class="btn btn-view" style="background-color: rgb(41, 41, 143); border: none;color: white">View</button>
+          <button class="btn btn-edit" style="background-color: rgb(69, 96, 232); border: none; color: white">Edit</button>
+          <button (click)="deleteData(contactData)" class="btn btn-delete" style="background-color: rgb(186, 49, 49); border: none; color: white">Delete</button>
+        </td>
+      </tr>
+    </tbody> -->
+
+  </table>
+</div>
+
+

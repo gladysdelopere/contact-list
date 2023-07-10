@@ -1,0 +1,22 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-right: 100px;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+td, button{
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-block: 2px;
+}
